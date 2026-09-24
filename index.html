@@ -69,7 +69,7 @@
         }
     </script>
 
-    <!-- Schema.org JSON-LD para SEO Local (Locksmith / Chaveiro 24 Horas) -->
+    <!-- Schema.org JSON-LD para SEO Local -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -159,8 +159,8 @@
                 transform: scale(1);
             }
             50% {
-                box-shadow: 0 0 0 14px rgba(34, 197, 94, 0);
-                transform: scale(1.02);
+                box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+                transform: scale(1.03);
             }
         }
 
@@ -170,8 +170,8 @@
 
         .reveal-on-scroll {
             opacity: 0;
-            transform: translateY(28px);
-            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(24px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
 
@@ -183,43 +183,41 @@
 </head>
 <body class="bg-brand-black text-zinc-100 font-sans antialiased selection:bg-brand-gold selection:text-black min-h-screen">
 
-    <!-- Top Bar de Urgência 24h (100% Foco no WhatsApp) -->
+    <!-- Top Bar de Urgência 24h -->
     <div class="bg-gradient-to-r from-amber-950/90 via-black to-amber-950/90 border-b border-brand-gold/30 text-xs sm:text-sm py-2 px-4 sticky top-0 z-50 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
             <div class="flex items-center gap-2">
-                <span class="flex h-2.5 w-2.5 relative">
+                <span class="flex h-2 w-2 relative">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span class="font-semibold text-emerald-400">PLANTÃO 24 HORAS ATIVO:</span>
-                <span class="text-zinc-300 hidden sm:inline">Técnicos de prontidão na Baixada Fluminense</span>
+                <span class="font-semibold text-emerald-400">PLANTÃO 24 HORAS:</span>
+                <span class="text-zinc-300 text-xs sm:text-sm">Belford Roxo, Caxias, Meriti e Nova Iguaçu</span>
             </div>
-            <div class="flex items-center gap-4 text-xs font-medium">
-                <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20atendimento%20de%20urgência" target="_blank" rel="noopener" class="cta-whatsapp text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1.5 font-bold" data-conversion="whatsapp-topbar">
-                    <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
-                    (21) 97041-6642 — Chamar no WhatsApp
-                </a>
-            </div>
+            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20atendimento%20de%20urgência" target="_blank" rel="noopener" class="cta-whatsapp text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1.5 font-bold text-xs" data-conversion="whatsapp-topbar">
+                <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                <span class="hidden sm:inline">(21) 97041-6642 —</span> WhatsApp 24h
+            </a>
         </div>
     </div>
 
     <!-- Header Principal / Navegação com Âncoras -->
-    <header class="bg-brand-dark/95 border-b border-brand-border/60 sticky top-9 z-40 backdrop-blur-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header class="bg-brand-dark/95 border-b border-brand-border/60 sticky top-8 sm:top-9 z-40 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
             <!-- Logo -->
-            <a href="#home" class="flex items-center gap-3 group">
-                <img src="images/BR Chaveiro 24 horas logo favicon 250x250.webp" alt="BR Chaveiro 24 Horas" class="h-12 w-12 rounded-xl object-contain border border-brand-gold/30 shadow-md group-hover:border-brand-gold transition duration-300">
+            <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group">
+                <img src="images/BR Chaveiro 24 horas logo favicon 250x250.webp" alt="BR Chaveiro 24 Horas" class="h-10 w-10 sm:h-12 sm:w-12 rounded-xl object-contain border border-brand-gold/30 shadow-md group-hover:border-brand-gold transition duration-300">
                 <div class="flex flex-col">
-                    <span class="font-heading font-extrabold text-xl sm:text-2xl tracking-tight text-white leading-none">
+                    <span class="font-heading font-extrabold text-lg sm:text-2xl tracking-tight text-white leading-none">
                         BR <span class="text-brand-gold">CHAVEIRO</span>
                     </span>
-                    <span class="text-[10px] tracking-widest text-brand-goldLight font-bold uppercase mt-1">
+                    <span class="text-[9px] sm:text-[10px] tracking-widest text-brand-goldLight font-bold uppercase mt-0.5 sm:mt-1">
                         Atendimento 24 Horas
                     </span>
                 </div>
             </a>
 
-            <!-- Menu Desktop com Seções Âncoras -->
+            <!-- Menu Desktop -->
             <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-zinc-300">
                 <a href="#home" class="hover:text-brand-gold transition py-1">Home</a>
                 <a href="#servicos" class="hover:text-brand-gold transition py-1">Nossos Serviços</a>
@@ -230,104 +228,92 @@
                 <a href="#faq" class="hover:text-brand-gold transition py-1">Dúvidas</a>
             </nav>
 
-            <!-- Botão Header CTA WhatsApp -->
-            <div class="flex items-center gap-3">
-                <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20atendimento%20de%20chaveiro" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer hidden sm:inline-flex items-center gap-2 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-sm px-6 py-2.5 rounded-full shadow-lg shadow-amber-500/20 transition-all duration-300 hover:scale-105 active:scale-95" data-conversion="whatsapp-header">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Chamar no WhatsApp</span>
-                </a>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" aria-label="Abrir Menu" class="lg:hidden p-2.5 rounded-lg bg-brand-card border border-brand-border text-zinc-300 hover:text-brand-gold">
-                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
-                </button>
-            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" aria-label="Abrir Menu" class="lg:hidden p-2 rounded-lg bg-brand-card border border-brand-border text-zinc-300 hover:text-brand-gold">
+                <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+            </button>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-brand-dark/98 border-b border-brand-border px-6 py-5 flex flex-col gap-4 shadow-2xl transition-all duration-300">
-            <a href="#home" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1 border-b border-zinc-800">Home</a>
-            <a href="#servicos" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1 border-b border-zinc-800">Nossos Serviços</a>
-            <a href="#diferenciais" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1 border-b border-zinc-800">Nosso Diferencial</a>
-            <a href="#publico" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1 border-b border-zinc-800">Nosso Público</a>
-            <a href="#regioes" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1 border-b border-zinc-800">Bairros que Atendemos</a>
-            <a href="#historia" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1 border-b border-zinc-800">Nossa História</a>
-            <a href="#faq" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-base py-1">Perguntas Frequentes</a>
-            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20atendimento%20de%20chaveiro" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer flex items-center justify-center gap-2 bg-gold-gradient text-black font-extrabold text-sm py-3 rounded-full mt-2" data-conversion="whatsapp-mobile-menu">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                Chamar no WhatsApp (21) 97041-6642
-            </a>
+        <div id="mobileMenu" class="hidden lg:hidden bg-brand-dark/98 border-b border-brand-border px-6 py-4 flex flex-col gap-3 shadow-2xl transition-all duration-300">
+            <a href="#home" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1 border-b border-zinc-800">Home</a>
+            <a href="#servicos" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1 border-b border-zinc-800">Nossos Serviços</a>
+            <a href="#diferenciais" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1 border-b border-zinc-800">Nosso Diferencial</a>
+            <a href="#publico" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1 border-b border-zinc-800">Nosso Público</a>
+            <a href="#regioes" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1 border-b border-zinc-800">Bairros que Atendemos</a>
+            <a href="#historia" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1 border-b border-zinc-800">Nossa História</a>
+            <a href="#faq" class="mobile-nav-link text-zinc-200 hover:text-brand-gold font-medium text-sm py-1">Perguntas Frequentes</a>
         </div>
     </header>
 
     <main>
-        <!-- SEÇÃO 1: HERO (#home) -->
-        <section id="home" class="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden bg-hero-glow">
+        <!-- SEÇÃO 1: HERO (#home) — CTA 1 DO SITE -->
+        <section id="home" class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden bg-hero-glow">
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     
                     <!-- Coluna de Texto & Copywriting -->
                     <div class="lg:col-span-7 flex flex-col items-start text-left">
                         
-                        <!-- Badge de Alerta e Confiança -->
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/40 text-brand-goldLight text-xs sm:text-sm font-semibold mb-6 shadow-inner">
+                        <!-- Badge de Alerta -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-card border border-brand-gold/40 text-brand-goldLight text-xs font-semibold mb-5 shadow-inner">
                             <span class="flex h-2 w-2 rounded-full bg-red-500 animate-ping"></span>
-                            🚨 Chaveiro 24 Horas – Atendimento Rápido e Seguro
+                            🚨 Atendimento Emergencial 24 Horas
                         </div>
 
-                        <!-- H1 Principal com SEO Local -->
-                        <h1 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] leading-[1.15] text-white mb-6">
+                        <!-- H1 Principal -->
+                        <h1 class="font-heading font-extrabold text-2.5xl sm:text-4xl md:text-5xl lg:text-[2.75rem] leading-[1.18] text-white mb-5">
                             🚨 Chaveiro 24 Horas – <span class="text-gold-gradient">Atendimento Rápido e Seguro</span> em Belford Roxo, Caxias, São João de Meriti e Nova Iguaçu!
                         </h1>
 
                         <!-- Subheadline Clara -->
-                        <p class="text-base sm:text-lg text-zinc-300 leading-relaxed mb-8 max-w-2xl">
+                        <p class="text-sm sm:text-base text-zinc-300 leading-relaxed mb-7 max-w-2xl">
                             Estamos prontos para atender sua emergência a qualquer hora do dia ou da noite. Confiança e agilidade ao seu alcance para residências, automóveis e empresas.
                         </p>
 
-                        <!-- CTA Principal Exclusivo para WhatsApp -->
-                        <div class="w-full sm:w-auto mb-10">
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%2024%20horas%20em%20minutos" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer flex items-center justify-center gap-3 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-base sm:text-lg px-9 py-4.5 rounded-xl shadow-2xl shadow-amber-500/25 transition duration-300 hover:scale-[1.03] active:scale-[0.98] w-full sm:w-auto" data-conversion="whatsapp-hero-main">
-                                <i class="fa-brands fa-whatsapp text-2xl text-black"></i>
-                                <span>Chamar no WhatsApp (21) 97041-6642</span>
+                        <!-- CTA 1: Hero WhatsApp (Botão Compacto e Otimizado para Mobile) -->
+                        <div class="w-full sm:w-auto mb-8">
+                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%2024%20horas" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center justify-center gap-2.5 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-sm sm:text-base px-6 py-3.5 rounded-xl shadow-lg shadow-amber-500/20 transition duration-300 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto" data-conversion="whatsapp-hero">
+                                <i class="fa-brands fa-whatsapp text-xl text-black"></i>
+                                <span>Chame Chaveiro</span>
                             </a>
-                            <p class="text-xs text-zinc-400 mt-2.5 flex items-center gap-1.5 justify-center sm:justify-start">
-                                <i class="fa-solid fa-clock-rotate-left text-brand-gold"></i>
-                                Resposta imediata • Técnicos de prontidão na sua região
+                            <p class="text-[11px] sm:text-xs text-zinc-400 mt-2 flex items-center gap-1.5 justify-center sm:justify-start">
+                                <i class="fa-solid fa-bolt text-brand-gold"></i>
+                                Resposta rápida pelo WhatsApp • (21) 97041-6642
                             </p>
                         </div>
 
-                        <!-- Prova Social & Micro-Diferenciais na Dobra -->
-                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-brand-border/80 w-full">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-brand-gold flex-shrink-0">
-                                    <i class="fa-solid fa-bolt text-lg"></i>
+                        <!-- Prova Social na Dobra -->
+                        <div class="grid grid-cols-3 gap-3 pt-5 border-t border-brand-border/80 w-full">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-brand-gold text-sm flex-shrink-0">
+                                    <i class="fa-solid fa-bolt"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs text-zinc-400">Chegada</p>
-                                    <p class="text-sm font-bold text-white">Em Poucos Minutos</p>
+                                    <p class="text-[10px] text-zinc-400">Chegada</p>
+                                    <p class="text-xs font-bold text-white">Rápida</p>
                                 </div>
                             </div>
 
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-brand-gold flex-shrink-0">
-                                    <i class="fa-solid fa-clock text-lg"></i>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-brand-gold text-sm flex-shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs text-zinc-400">Plantão</p>
-                                    <p class="text-sm font-bold text-white">24h Sem Parar</p>
+                                    <p class="text-[10px] text-zinc-400">Plantão</p>
+                                    <p class="text-xs font-bold text-white">24 Horas</p>
                                 </div>
                             </div>
 
-                            <div class="col-span-2 sm:col-span-1 flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-brand-gold flex-shrink-0">
-                                    <i class="fa-solid fa-shield-halved text-lg"></i>
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-brand-gold text-sm flex-shrink-0">
+                                    <i class="fa-solid fa-shield-halved"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs text-zinc-400">Confiança</p>
-                                    <p class="text-sm font-bold text-white">100% Garantido</p>
+                                    <p class="text-[10px] text-zinc-400">Serviço</p>
+                                    <p class="text-xs font-bold text-white">Garantido</p>
                                 </div>
                             </div>
                         </div>
@@ -337,22 +323,22 @@
                     <!-- Coluna Visual: Imagem Hero -->
                     <div class="lg:col-span-5 relative">
                         <div class="relative mx-auto max-w-md lg:max-w-none">
-                            <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-gold via-amber-600 to-brand-goldLight rounded-3xl blur-md opacity-50 transition duration-1000"></div>
+                            <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold via-amber-600 to-brand-goldLight rounded-2xl blur opacity-40"></div>
                             
                             <div class="relative bg-brand-card rounded-2xl overflow-hidden border border-brand-gold/40 shadow-2xl">
-                                <img src="images/Chaveiro 24h Trancado do lado de fora.webp" alt="Chaveiro 24 horas socorro imediato trancado para fora" class="w-full h-[360px] sm:h-[420px] object-cover object-center transform hover:scale-105 transition duration-700 ease-out" loading="eager" width="600" height="420">
+                                <img src="images/Chaveiro 24h Trancado do lado de fora.webp" alt="Chaveiro 24 horas socorro imediato trancado para fora" class="w-full h-[320px] sm:h-[380px] object-cover object-center" loading="eager" width="600" height="380">
                                 
-                                <div class="absolute bottom-4 left-4 right-4 bg-brand-dark/90 backdrop-blur-md p-4 rounded-xl border border-brand-gold/40 flex items-center justify-between">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center text-emerald-400">
+                                <div class="absolute bottom-3 left-3 right-3 bg-brand-dark/90 backdrop-blur-md p-3 rounded-xl border border-brand-gold/40 flex items-center justify-between">
+                                    <div class="flex items-center gap-2.5">
+                                        <div class="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center text-emerald-400 text-sm">
                                             <i class="fa-solid fa-key"></i>
                                         </div>
                                         <div>
-                                            <p class="text-xs text-zinc-400">Trancado do lado de fora?</p>
-                                            <p class="text-sm font-bold text-white">Chegamos em minutos!</p>
+                                            <p class="text-[11px] text-zinc-400">Trancado do lado de fora?</p>
+                                            <p class="text-xs font-bold text-white">Atendimento imediato</p>
                                         </div>
                                     </div>
-                                    <span class="text-xs font-extrabold text-brand-gold uppercase tracking-wider bg-brand-black px-2.5 py-1 rounded border border-brand-gold/30">24H</span>
+                                    <span class="text-[10px] font-extrabold text-brand-gold uppercase tracking-wider bg-brand-black px-2 py-0.5 rounded border border-brand-gold/30">24H</span>
                                 </div>
                             </div>
                         </div>
@@ -362,254 +348,222 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 2: FAIXA DE EMERGÊNCIA (Meio de Página - WhatsApp) -->
-        <section id="emergencia" class="bg-gradient-to-r from-amber-950 via-zinc-900 to-amber-950 border-y border-brand-gold/40 py-8 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-                <div class="flex items-center gap-4">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-2xl flex-shrink-0">
-                        <i class="fa-brands fa-whatsapp animate-pulse text-emerald-400"></i>
+        <!-- SEÇÃO 2: FAIXA DE EMERGÊNCIA — CTA 2 DO SITE (Meio de Página) -->
+        <section id="emergencia" class="bg-gradient-to-r from-amber-950 via-zinc-900 to-amber-950 border-y border-brand-gold/40 py-6 sm:py-8 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xl flex-shrink-0">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
                     </div>
                     <div>
-                        <h2 class="font-heading font-extrabold text-xl sm:text-2xl text-white">Precisa de um Chaveiro com Urgência?</h2>
-                        <p class="text-zinc-300 text-sm sm:text-base">Equipes móveis prontas para atendimento imediato na Baixada Fluminense.</p>
+                        <h2 class="font-heading font-extrabold text-lg sm:text-xl text-white">Precisa de um Chaveiro com Urgência?</h2>
+                        <p class="text-zinc-300 text-xs sm:text-sm">Atendimento ágil para residências, automóveis e empresas na Baixada Fluminense.</p>
                     </div>
                 </div>
                 <div class="flex-shrink-0 w-full sm:w-auto">
-                    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%20de%20urgência%20agora" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center justify-center gap-2.5 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-base px-8 py-3.5 rounded-xl shadow-lg transition duration-300 w-full sm:w-auto" data-conversion="whatsapp-mid-cta">
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span>Falar com o Chaveiro no WhatsApp</span>
+                    <!-- CTA 2: Meio de Página -->
+                    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20atendimento%20de%20urgência" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center justify-center gap-2 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-sm sm:text-base px-6 py-3 rounded-xl shadow-md transition duration-300 w-full sm:w-auto" data-conversion="whatsapp-meio">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Fale Comigo</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- SEÇÃO 3: NOSSOS SERVIÇOS (#servicos) -->
-        <section id="servicos" class="py-20 md:py-28 bg-brand-black relative">
+        <!-- SEÇÃO 3: NOSSOS SERVIÇOS (#servicos) — Cards Limpos Sem Excesso de Botões -->
+        <section id="servicos" class="py-16 md:py-24 bg-brand-black relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-                    <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Nossas Especialidades</span>
-                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-4">
-                        Nossos <span class="text-gold-gradient">Serviços de Chaveiro 24h</span>
+                <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal-on-scroll">
+                    <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Nossas Especialidades</span>
+                    <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-3">
+                        Nossos <span class="text-gold-gradient">Serviços</span>
                     </h2>
-                    <p class="text-zinc-400 text-base sm:text-lg">
+                    <p class="text-zinc-400 text-sm sm:text-base">
                         Soluções ágeis, seguras e com ferramentas modernas para não danificar suas portas, travas ou veículos.
                     </p>
                 </div>
 
                 <!-- Grid de Serviços -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
                     <!-- Serviço 1: Abertura de Portas -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="images/chave-comum-chaveiro residência.webp" alt="Abertura de portas residenciais e comerciais" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" width="400" height="200">
+                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="images/chave-comum-chaveiro residência.webp" alt="Abertura de portas residenciais e comerciais" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">24 Horas</span>
+                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">24 Horas</span>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-goldLight transition">
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
                                 Abertura de portas residenciais e comerciais
                             </h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
-                                Abertura técnica de portas simples e blindadas, portões e fechaduras emperradas sem quebrar ou arranhar.
+                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                                Abertura técnica de portas simples e blindadas, portões e fechaduras emperradas sem quebrar a estrutura.
                             </p>
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20abertura%20de%20porta%20residencial%20ou%20comercial" target="_blank" rel="noopener" class="cta-whatsapp inline-flex items-center gap-2 text-brand-gold font-bold text-sm hover:text-brand-goldLight transition" data-conversion="whatsapp-servico-abertura-portas">
-                                <span>Pedir pelo WhatsApp</span>
-                                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
-                            </a>
                         </div>
                     </div>
 
                     <!-- Serviço 2: Chaves Codificadas Automotivas -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="images/chaveiro-chave codificada-abertura de veiculo.webp" alt="Chave codificada para automóveis e abertura" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" width="400" height="200">
+                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="images/chaveiro-chave codificada-abertura de veiculo.webp" alt="Chave codificada para automóveis e abertura" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">Auto 24h</span>
+                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Auto 24h</span>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-goldLight transition">
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
                                 Chave codificada para automóveis
                             </h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
-                                Abertura de carros sem avarias, cópias e programação de chaves codificadas transponder e presença para nacionais e importados.
+                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                                Abertura de veículos sem avarias, confecção e programação de chaves codificadas para carros nacionais e importados.
                             </p>
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20chave%20codificada%20para%20automóveis" target="_blank" rel="noopener" class="cta-whatsapp inline-flex items-center gap-2 text-brand-gold font-bold text-sm hover:text-brand-goldLight transition" data-conversion="whatsapp-servico-chave-codificada">
-                                <span>Pedir pelo WhatsApp</span>
-                                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
-                            </a>
                         </div>
                     </div>
 
                     <!-- Serviço 3: Troca e Instalação de Fechaduras -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="images/chave-comum-chaveiro 24h-chave.webp" alt="Troca e instalação de fechaduras" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" width="400" height="200">
+                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="images/chave-comum-chaveiro 24h-chave.webp" alt="Troca e instalação de fechaduras" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">Segurança</span>
+                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Segurança</span>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-goldLight transition">
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
                                 Troca e instalação de fechaduras
                             </h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
-                                Substituição de cilindros, troca de segredo após mudanças ou perdas, instalação de travas tetra e fechaduras auxiliares.
+                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                                Troca de segredo, substituição de cilindros danificados, instalação de travas auxiliares e trincos tetra.
                             </p>
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20troca%20ou%20instalação%20de%20fechaduras" target="_blank" rel="noopener" class="cta-whatsapp inline-flex items-center gap-2 text-brand-gold font-bold text-sm hover:text-brand-goldLight transition" data-conversion="whatsapp-servico-troca-fechaduras">
-                                <span>Pedir pelo WhatsApp</span>
-                                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
-                            </a>
                         </div>
                     </div>
 
                     <!-- Serviço 4: Telecomandos e Chaves Canivete -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="images/telecomando-chaveiro.webp" alt="Telecomandos e chaves de carro" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" width="400" height="200">
+                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
+                        <div class="h-44 overflow-hidden relative">
+                            <img src="images/telecomando-chaveiro.webp" alt="Telecomandos e chaves de carro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
                             <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">Tecnologia</span>
+                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Tecnologia</span>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-goldLight transition">
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
                                 Telecomandos & Chaves Canivete
                             </h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
-                                Troca de carcaças, conserto de botões quebrados, adaptação para chave canivete e sincronização de controles de alarme.
+                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                                Conserto de botões quebrados, troca de carcaças, adaptação para chave canivete e sincronização de controles.
                             </p>
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20telecomando%20ou%20chave%20canivete" target="_blank" rel="noopener" class="cta-whatsapp inline-flex items-center gap-2 text-brand-gold font-bold text-sm hover:text-brand-goldLight transition" data-conversion="whatsapp-servico-telecomandos">
-                                <span>Pedir pelo WhatsApp</span>
-                                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
-                            </a>
                         </div>
                     </div>
 
                     <!-- Serviço 5: Fechaduras Eletrônicas -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg">
-                        <div class="h-48 overflow-hidden relative bg-zinc-900 flex items-center justify-center">
-                            <div class="w-20 h-20 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-3xl">
+                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
+                        <div class="h-44 overflow-hidden relative bg-zinc-900 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl">
                                 <i class="fa-solid fa-fingerprint"></i>
                             </div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">Digital</span>
+                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Digital</span>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Fechaduras Eletrônicas e Digitais
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
+                                Instalação e manutenção de fechaduras eletrônicas
                             </h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
-                                Instalação e manutenção de fechaduras inteligentes com biometria, senha e cartão magnético para casas e empresas.
+                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                                Configuração e instalação de fechaduras digitais por biometria, senha e cartão magnético para imóveis.
                             </p>
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20fechadura%20eletrônica%20ou%20digital" target="_blank" rel="noopener" class="cta-whatsapp inline-flex items-center gap-2 text-brand-gold font-bold text-sm hover:text-brand-goldLight transition" data-conversion="whatsapp-servico-fechaduras-digitais">
-                                <span>Pedir pelo WhatsApp</span>
-                                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
-                            </a>
                         </div>
                     </div>
 
                     <!-- Serviço 6: Abertura de Cofres & Emergenciais -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group hover:-translate-y-1.5 shadow-lg">
-                        <div class="h-48 overflow-hidden relative bg-zinc-900 flex items-center justify-center">
-                            <div class="w-20 h-20 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-3xl">
+                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
+                        <div class="h-44 overflow-hidden relative bg-zinc-900 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl">
                                 <i class="fa-solid fa-vault"></i>
                             </div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">Especializado</span>
+                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Especializado</span>
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-heading font-bold text-xl text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Abertura de cofres e emergências 24h
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
+                                Abertura de cofres e serviços emergenciais 24 horas
                             </h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-5">
-                                Abertura técnica de cofres digitais e mecânicos com sigilo profissional absoluto e socorro emergencial 24 horas.
+                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                                Abertura técnica de cofres digitais e mecânicos com sigilo e segurança profissional a qualquer hora.
                             </p>
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20abertura%20de%20cofre%20ou%20serviço%20emergencial" target="_blank" rel="noopener" class="cta-whatsapp inline-flex items-center gap-2 text-brand-gold font-bold text-sm hover:text-brand-goldLight transition" data-conversion="whatsapp-servico-abertura-cofres">
-                                <span>Pedir pelo WhatsApp</span>
-                                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
-                            </a>
                         </div>
                     </div>
 
-                </div>
-
-                <!-- CTA Central pós-serviços -->
-                <div class="mt-14 text-center reveal-on-scroll">
-                    <p class="text-zinc-300 text-base mb-4">Precisa de orçamento para outro modelo de chave ou fechadura?</p>
-                    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20orçamento%20de%20chaveiro" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center gap-3 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-base px-8 py-3.5 rounded-full shadow-lg shadow-amber-500/20 transition duration-300 hover:scale-105" data-conversion="whatsapp-servicos-cta">
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span>Chamar no WhatsApp: (21) 97041-6642</span>
-                    </a>
                 </div>
 
             </div>
         </section>
 
         <!-- SEÇÃO 4: NOSSO DIFERENCIAL (#diferenciais) -->
-        <section id="diferenciais" class="py-20 bg-brand-dark border-t border-brand-border relative">
+        <section id="diferenciais" class="py-16 md:py-20 bg-brand-dark border-t border-brand-border relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-                    <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Qualidade & Confiabilidade</span>
-                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-4">
+                <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal-on-scroll">
+                    <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Qualidade & Confiabilidade</span>
+                    <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-3">
                         Nosso <span class="text-gold-gradient">Diferencial</span>
                     </h2>
-                    <p class="text-zinc-400 text-base sm:text-lg">
-                        Entregar a chave da sua casa ou do seu carro exige extrema confiança. Veja por que somos a escolha número 1 na Baixada:
+                    <p class="text-zinc-400 text-sm sm:text-base">
+                        Entregar a chave da sua casa ou do seu carro exige extrema confiança:
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     
                     <!-- Diferencial 1 -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
-                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                    <div class="reveal-on-scroll bg-brand-card p-5 sm:p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-xl mb-4">
                             <i class="fa-solid fa-bolt"></i>
                         </div>
-                        <h3 class="font-heading font-bold text-lg text-white mb-2">Atendimento rápido e emergencial 24 horas</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">
-                            Plantão ativo dia e noite para você não perder tempo trancado do lado de fora.
+                        <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-1.5">Atendimento rápido e emergencial 24 horas</h3>
+                        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            Plantão ativo dia e noite para atender sua emergência com agilidade.
                         </p>
                     </div>
 
                     <!-- Diferencial 2 -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
-                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                    <div class="reveal-on-scroll bg-brand-card p-5 sm:p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-xl mb-4">
                             <i class="fa-solid fa-user-shield"></i>
                         </div>
-                        <h3 class="font-heading font-bold text-lg text-white mb-2">Profissionais experientes e de confiança</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">
-                            Técnicos especializados e honestos que zelam pela integridade do seu imóvel e veículo.
+                        <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-1.5">Profissionais experientes e de confiança</h3>
+                        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            Atendimento ético e cuidadoso que preza pela integridade do seu imóvel e veículo.
                         </p>
                     </div>
 
                     <!-- Diferencial 3 -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
-                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                    <div class="reveal-on-scroll bg-brand-card p-5 sm:p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-xl mb-4">
                             <i class="fa-solid fa-map-location-dot"></i>
                         </div>
-                        <h3 class="font-heading font-bold text-lg text-white mb-2">Cobertura em Belford Roxo, Caxias, Meriti e Nova Iguaçu</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">
-                            Equipes distribuídas estrategicamente para chegar até você em minutos.
+                        <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-1.5">Cobertura em Belford Roxo, Caxias, Meriti e Nova Iguaçu</h3>
+                        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            Atendimento direto nos principais municípios da Baixada Fluminense.
                         </p>
                     </div>
 
                     <!-- Diferencial 4 -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
-                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                    <div class="reveal-on-scroll bg-brand-card p-5 sm:p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-xl mb-4">
                             <i class="fa-solid fa-handshake-simple"></i>
                         </div>
-                        <h3 class="font-heading font-bold text-lg text-white mb-2">Preços justos e transparência no orçamento</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">
-                            Valor informado e combinado antes do serviço, sem taxas surpresas ou cobranças indevidas.
+                        <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-1.5">Preços justos e transparência no orçamento</h3>
+                        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            Valor combinado antes da realização do serviço, sem taxas surpresas.
                         </p>
                     </div>
 
                     <!-- Diferencial 5 -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300 col-span-1 sm:col-span-2 lg:col-span-2">
-                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                    <div class="reveal-on-scroll bg-brand-card p-5 sm:p-6 rounded-2xl border border-brand-border hover:border-brand-gold/50 transition duration-300 col-span-1 sm:col-span-2 lg:col-span-2">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-xl mb-4">
                             <i class="fa-solid fa-lock-open"></i>
                         </div>
-                        <h3 class="font-heading font-bold text-lg text-white mb-2">Suporte para diversos tipos de fechaduras e sistemas de segurança</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">
-                            Atendemos desde fechaduras tradicionais e tetra até chaves automotivas codificadas e fechaduras digitais inteligentes.
+                        <h3 class="font-heading font-bold text-base sm:text-lg text-white mb-1.5">Suporte para diversos tipos de fechaduras e sistemas de segurança</h3>
+                        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                            Atendimento técnico para fechaduras simples, tetra, chaves automotivas codificadas e modelos eletrônicos.
                         </p>
                     </div>
 
@@ -619,86 +573,67 @@
         </section>
 
         <!-- SEÇÃO 5: NOSSO PÚBLICO (#publico) -->
-        <section id="publico" class="py-20 bg-brand-black relative">
+        <section id="publico" class="py-16 md:py-20 bg-brand-black relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-                    <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Atendimento Especializado</span>
-                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-4">
+                <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal-on-scroll">
+                    <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Atendimento Especializado</span>
+                    <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-3">
                         Nosso <span class="text-gold-gradient">Público</span>
                     </h2>
-                    <p class="text-zinc-400 text-base sm:text-lg">
+                    <p class="text-zinc-400 text-sm sm:text-base">
                         Moradores e empresas localizadas em Belford Roxo, Caxias, São João de Meriti e Nova Iguaçu que precisam de chaveiro a qualquer hora do dia ou da noite:
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     
                     <!-- Público 1: Residencial -->
-                    <div class="reveal-on-scroll bg-card-gradient p-8 rounded-3xl border border-brand-border hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="w-16 h-16 rounded-2xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-3xl mb-6">
-                                <i class="fa-solid fa-house-user"></i>
-                            </div>
-                            <h3 class="font-heading font-extrabold text-2xl text-white mb-3">Residências & Moradores</h3>
-                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
-                                Perdeu a chave de casa, trancou com a chave por dentro ou a fechadura quebrou? Atendemos casas e apartamentos com rapidez e cuidado.
-                            </p>
-                            <ul class="space-y-2.5 text-sm text-zinc-400 mb-8">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Abertura sem danificar a porta</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Troca de segredo e chaves tetra</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Instalação de fechaduras digitais</li>
-                            </ul>
+                    <div class="reveal-on-scroll bg-card-gradient p-6 sm:p-7 rounded-2xl border border-brand-border hover:border-brand-gold/60 transition duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                            <i class="fa-solid fa-house-user"></i>
                         </div>
-                        <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20atendimento%20residencial" target="_blank" rel="noopener" class="cta-whatsapp w-full text-center py-3.5 px-4 rounded-xl bg-brand-card hover:bg-gold-gradient hover:text-black text-white font-bold text-sm border border-brand-gold/40 transition duration-300 flex items-center justify-center gap-2" data-conversion="whatsapp-publico-residencial">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Chamar para Residência</span>
-                        </a>
+                        <h3 class="font-heading font-extrabold text-xl text-white mb-2">Residências & Moradores</h3>
+                        <p class="text-zinc-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Perdeu a chave de casa, trancou com a chave por dentro ou a fechadura quebrou? Atendimento com rapidez e cuidado.
+                        </p>
+                        <ul class="space-y-2 text-xs text-zinc-400">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Abertura sem danificar a porta</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Troca de segredo e chaves tetra</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Instalação de fechaduras digitais</li>
+                        </ul>
                     </div>
 
                     <!-- Público 2: Automotivo -->
-                    <div class="reveal-on-scroll bg-card-gradient p-8 rounded-3xl border border-brand-gold/40 shadow-xl shadow-amber-500/10 flex flex-col justify-between relative">
-                        <span class="absolute -top-3 right-6 bg-gold-gradient text-black font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Plantão 24h</span>
-                        <div>
-                            <div class="w-16 h-16 rounded-2xl bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-3xl mb-6">
-                                <i class="fa-solid fa-car"></i>
-                            </div>
-                            <h3 class="font-heading font-extrabold text-2xl text-white mb-3">Motoristas & Automóveis</h3>
-                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
-                                Trancou a chave dentro do carro ou perdeu na rua? Vamos até onde o seu veículo estiver e resolvemos com equipamentos especializados.
-                            </p>
-                            <ul class="space-y-2.5 text-sm text-zinc-400 mb-8">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Abertura sem riscar a pintura</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Chaves codificadas e transponder</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Telecomandos e chave canivete</li>
-                            </ul>
+                    <div class="reveal-on-scroll bg-card-gradient p-6 sm:p-7 rounded-2xl border border-brand-gold/40 shadow-lg shadow-amber-500/10 transition duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-2xl mb-5">
+                            <i class="fa-solid fa-car"></i>
                         </div>
-                        <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20atendimento%20para%20meu%20carro" target="_blank" rel="noopener" class="cta-whatsapp w-full text-center py-3.5 px-4 rounded-xl bg-gold-gradient text-black font-extrabold text-sm transition duration-300 hover:scale-[1.02] flex items-center justify-center gap-2" data-conversion="whatsapp-publico-automotivo">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Chamar para Automóvel</span>
-                        </a>
+                        <h3 class="font-heading font-extrabold text-xl text-white mb-2">Motoristas & Automóveis</h3>
+                        <p class="text-zinc-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Trancou a chave dentro do carro ou perdeu na rua? Atendimento com equipamentos adequados no local.
+                        </p>
+                        <ul class="space-y-2 text-xs text-zinc-400">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Abertura técnica de veículos</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Chaves codificadas e transponder</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Telecomandos e chave canivete</li>
+                        </ul>
                     </div>
 
                     <!-- Público 3: Comercial -->
-                    <div class="reveal-on-scroll bg-card-gradient p-8 rounded-3xl border border-brand-border hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="w-16 h-16 rounded-2xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-3xl mb-6">
-                                <i class="fa-solid fa-building"></i>
-                            </div>
-                            <h3 class="font-heading font-extrabold text-2xl text-white mb-3">Empresas & Comércios</h3>
-                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
-                                Portas de rolo emperradas, trancas de vitrines, escritórios e cofres. Garanta o funcionamento e a segurança da sua empresa.
-                            </p>
-                            <ul class="space-y-2.5 text-sm text-zinc-400 mb-8">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Portas de aço e vidro</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Abertura técnica de cofres</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Mestragens de fechaduras</li>
-                            </ul>
+                    <div class="reveal-on-scroll bg-card-gradient p-6 sm:p-7 rounded-2xl border border-brand-border hover:border-brand-gold/60 transition duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl mb-5">
+                            <i class="fa-solid fa-building"></i>
                         </div>
-                        <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20atendimento%20para%20minha%20empresa" target="_blank" rel="noopener" class="cta-whatsapp w-full text-center py-3.5 px-4 rounded-xl bg-brand-card hover:bg-gold-gradient hover:text-black text-white font-bold text-sm border border-brand-gold/40 transition duration-300 flex items-center justify-center gap-2" data-conversion="whatsapp-publico-comercial">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Chamar para Empresa</span>
-                        </a>
+                        <h3 class="font-heading font-extrabold text-xl text-white mb-2">Empresas & Comércios</h3>
+                        <p class="text-zinc-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            Portas de aço emperradas, trancas de vitrines, escritórios e cofres. Garanta o funcionamento e a segurança do seu negócio.
+                        </p>
+                        <ul class="space-y-2 text-xs text-zinc-400">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Portas de aço e vidro</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Abertura de cofres</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Mestragens de fechaduras</li>
+                        </ul>
                     </div>
 
                 </div>
@@ -707,128 +642,118 @@
         </section>
 
         <!-- SEÇÃO 6: BAIRROS QUE ATENDEMOS (#regioes) -->
-        <section id="regioes" class="py-20 bg-brand-dark border-y border-brand-border relative overflow-hidden">
+        <section id="regioes" class="py-16 md:py-20 bg-brand-dark border-y border-brand-border relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-                    <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Cobertura Completa</span>
-                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-4">
+                <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal-on-scroll">
+                    <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Cobertura Completa</span>
+                    <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-3">
                         Bairros que <span class="text-gold-gradient">Atendemos</span>
                     </h2>
-                    <p class="text-zinc-400 text-base sm:text-lg">
-                        Atendimento com equipes móveis em todos os bairros das 4 principais cidades da Baixada Fluminense:
+                    <p class="text-zinc-400 text-sm sm:text-base">
+                        Atendimento nos bairros dos principais municípios da Baixada Fluminense:
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                     
                     <!-- Belford Roxo -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i class="fa-solid fa-location-dot text-brand-gold text-xl"></i>
-                            <h3 class="font-heading font-bold text-xl text-white">Belford Roxo</h3>
+                    <div class="reveal-on-scroll bg-brand-card p-5 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
+                        <div class="flex items-center gap-2.5 mb-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold text-lg"></i>
+                            <h3 class="font-heading font-bold text-lg text-white">Belford Roxo</h3>
                         </div>
-                        <p class="text-zinc-400 text-xs mb-4">Plantão 24h em todos os bairros:</p>
+                        <p class="text-zinc-400 text-xs mb-3">Plantão 24h em bairros como:</p>
                         <div class="flex flex-wrap gap-1.5 text-xs text-zinc-300 font-medium">
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Centro</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Areia Branca</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Lote XV</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Nova Aurora</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Heliópolis</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">e toda região</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Centro</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Areia Branca</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Lote XV</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Nova Aurora</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Heliópolis</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">e região</span>
                         </div>
                     </div>
 
                     <!-- Duque de Caxias -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i class="fa-solid fa-location-dot text-brand-gold text-xl"></i>
-                            <h3 class="font-heading font-bold text-xl text-white">Duque de Caxias</h3>
+                    <div class="reveal-on-scroll bg-brand-card p-5 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
+                        <div class="flex items-center gap-2.5 mb-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold text-lg"></i>
+                            <h3 class="font-heading font-bold text-lg text-white">Duque de Caxias</h3>
                         </div>
-                        <p class="text-zinc-400 text-xs mb-4">Plantão 24h em todos os bairros:</p>
+                        <p class="text-zinc-400 text-xs mb-3">Plantão 24h em bairros como:</p>
                         <div class="flex flex-wrap gap-1.5 text-xs text-zinc-300 font-medium">
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Centro</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">25 de Agosto</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Gramacho</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Santa Cruz da Serra</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Parque Lafaiete</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">e toda região</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Centro</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">25 de Agosto</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Gramacho</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Santa Cruz</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Pq. Lafaiete</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">e região</span>
                         </div>
                     </div>
 
                     <!-- São João de Meriti -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i class="fa-solid fa-location-dot text-brand-gold text-xl"></i>
-                            <h3 class="font-heading font-bold text-xl text-white">São João de Meriti</h3>
+                    <div class="reveal-on-scroll bg-brand-card p-5 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
+                        <div class="flex items-center gap-2.5 mb-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold text-lg"></i>
+                            <h3 class="font-heading font-bold text-lg text-white">São João de Meriti</h3>
                         </div>
-                        <p class="text-zinc-400 text-xs mb-4">Plantão 24h em todos os bairros:</p>
+                        <p class="text-zinc-400 text-xs mb-3">Plantão 24h em bairros como:</p>
                         <div class="flex flex-wrap gap-1.5 text-xs text-zinc-300 font-medium">
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Centro</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Vilar dos Teles</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Coelho da Rocha</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Éden</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Grande Rio</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">e toda região</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Centro</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Vilar dos Teles</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Coelho da Rocha</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Éden</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Grande Rio</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">e região</span>
                         </div>
                     </div>
 
                     <!-- Nova Iguaçu -->
-                    <div class="reveal-on-scroll bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i class="fa-solid fa-location-dot text-brand-gold text-xl"></i>
-                            <h3 class="font-heading font-bold text-xl text-white">Nova Iguaçu</h3>
+                    <div class="reveal-on-scroll bg-brand-card p-5 rounded-2xl border border-brand-border hover:border-brand-gold transition duration-300">
+                        <div class="flex items-center gap-2.5 mb-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold text-lg"></i>
+                            <h3 class="font-heading font-bold text-lg text-white">Nova Iguaçu</h3>
                         </div>
-                        <p class="text-zinc-400 text-xs mb-4">Plantão 24h em todos os bairros:</p>
+                        <p class="text-zinc-400 text-xs mb-3">Plantão 24h em bairros como:</p>
                         <div class="flex flex-wrap gap-1.5 text-xs text-zinc-300 font-medium">
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Centro</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Comendador Soares</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Austin</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Posse</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">Rancho Novo</span>
-                            <span class="bg-brand-black px-2.5 py-1 rounded border border-zinc-800">e toda região</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Centro</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Com. Soares</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Austin</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Posse</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">Rancho Novo</span>
+                            <span class="bg-brand-black px-2 py-0.5 rounded border border-zinc-800">e região</span>
                         </div>
                     </div>
 
-                </div>
-
-                <!-- Callout de WhatsApp para Localização -->
-                <div class="bg-brand-black p-6 sm:p-8 rounded-2xl border border-brand-gold/30 text-center max-w-2xl mx-auto reveal-on-scroll">
-                    <p class="text-white font-bold text-lg mb-2">Está em outra localidade próxima?</p>
-                    <p class="text-zinc-400 text-sm mb-5">Consulte nossa central no WhatsApp para saber o tempo estimado de chegada da viatura mais próxima.</p>
-                    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20saber%20se%20atendem%20meu%20bairro" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center gap-2 bg-gold-gradient text-black font-extrabold text-sm px-7 py-3.5 rounded-full" data-conversion="whatsapp-regioes-callout">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span>Consultar Meu Bairro no WhatsApp</span>
-                    </a>
                 </div>
 
             </div>
         </section>
 
         <!-- SEÇÃO 7: NOSSA HISTÓRIA (#historia) -->
-        <section id="historia" class="py-20 md:py-28 bg-brand-black relative">
+        <section id="historia" class="py-16 md:py-24 bg-brand-black relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     
-                    <!-- Imagem / Logo 3D -->
+                    <!-- Imagem / Logo -->
                     <div class="lg:col-span-5 reveal-on-scroll">
-                        <div class="relative bg-brand-card p-8 rounded-3xl border border-brand-gold/40 shadow-2xl text-center">
-                            <img src="images/BR Chaveiro 24 horas logo favicon 600x600.webp" alt="BR Chaveiro 24 Horas tradição e autoridade" class="w-64 h-64 object-contain mx-auto rounded-2xl drop-shadow-2xl" loading="lazy" width="300" height="300">
-                            <div class="mt-6 pt-6 border-t border-brand-border">
-                                <p class="text-brand-gold font-bold text-base">Tradição & Confiança</p>
-                                <p class="text-zinc-400 text-xs mt-1">Sua segurança em primeiro lugar na Baixada Fluminense</p>
+                        <div class="relative bg-brand-card p-6 sm:p-8 rounded-3xl border border-brand-gold/40 shadow-xl text-center">
+                            <img src="images/BR Chaveiro 24 horas logo favicon 600x600.webp" alt="BR Chaveiro 24 Horas tradição e autoridade" class="w-48 h-48 sm:w-56 sm:h-56 object-contain mx-auto rounded-2xl drop-shadow-xl" loading="lazy" width="224" height="224">
+                            <div class="mt-5 pt-5 border-t border-brand-border">
+                                <p class="text-brand-gold font-bold text-sm">Tradição & Confiança</p>
+                                <p class="text-zinc-400 text-xs mt-0.5">Sua segurança em primeiro lugar</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Conteúdo História -->
                     <div class="lg:col-span-7 reveal-on-scroll">
-                        <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Nossa História</span>
-                        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-6">
+                        <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Nossa História</span>
+                        <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-5">
                             Nossa <span class="text-gold-gradient">História</span>
                         </h2>
                         
-                        <div class="space-y-4 text-zinc-300 text-base leading-relaxed">
+                        <div class="space-y-3.5 text-zinc-300 text-sm sm:text-base leading-relaxed">
                             <p>
                                 A <strong class="text-white">BR Chaveiro 24 Horas</strong> nasceu com o objetivo de trazer tranquilidade e segurança para moradores e empresas da Baixada Fluminense.
                             </p>
@@ -839,14 +764,6 @@
                                 Nosso compromisso é estar sempre disponíveis, oferecendo soluções eficientes para qualquer emergência, dia e noite.
                             </p>
                         </div>
-
-                        <div class="mt-8 pt-6 border-t border-brand-border">
-                            <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20solicitar%20um%20chaveiro" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center gap-3 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-sm sm:text-base px-8 py-3.5 rounded-full shadow-lg transition duration-300 hover:scale-105" data-conversion="whatsapp-historia-cta">
-                                <i class="fa-brands fa-whatsapp text-xl"></i>
-                                <span>Falar no WhatsApp: (21) 97041-6642</span>
-                            </a>
-                        </div>
-
                     </div>
 
                 </div>
@@ -854,82 +771,82 @@
         </section>
 
         <!-- SEÇÃO 8: PERGUNTAS FREQUENTES (#faq) -->
-        <section id="faq" class="py-20 bg-brand-dark border-t border-brand-border relative">
+        <section id="faq" class="py-16 md:py-20 bg-brand-dark border-t border-brand-border relative">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="text-center mb-16 reveal-on-scroll">
-                    <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Tire Suas Dúvidas</span>
-                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-4">
+                <div class="text-center mb-12 sm:mb-16 reveal-on-scroll">
+                    <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Tire Suas Dúvidas</span>
+                    <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-3">
                         Perguntas Frequentes (<span class="text-gold-gradient">FAQ</span>)
                     </h2>
-                    <p class="text-zinc-400 text-base">
+                    <p class="text-zinc-400 text-sm sm:text-base">
                         Respostas diretas para as dúvidas mais comuns:
                     </p>
                 </div>
 
-                <div class="space-y-4 reveal-on-scroll">
+                <div class="space-y-3.5 reveal-on-scroll">
                     
                     <!-- FAQ 1 -->
-                    <div class="faq-item bg-brand-card rounded-2xl border border-brand-border overflow-hidden transition duration-300">
-                        <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg hover:text-brand-gold transition">
-                            <span>Quanto tempo demora para o chaveiro chegar?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    <div class="faq-item bg-brand-card rounded-xl border border-brand-border overflow-hidden transition duration-300">
+                        <button class="faq-button w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-brand-gold transition">
+                            <span>Quanto tempo demora para o atendimento?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-300"></i>
                         </button>
-                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                            <p class="text-zinc-400 text-sm sm:text-base pb-5 leading-relaxed">
-                                Nossas equipes móveis estão estrategicamente distribuídas em Belford Roxo, Caxias, São João de Meriti e Nova Iguaçu. O tempo médio de chegada costuma ser de 15 a 35 minutos, dependendo do trânsito e da sua localização exata.
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5">
+                            <p class="text-zinc-400 text-xs sm:text-sm pb-4 leading-relaxed">
+                                O deslocamento é feito rapidamente com destino ao seu endereço em Belford Roxo, Caxias, São João de Meriti ou Nova Iguaçu, dependendo da sua localização exata e do trânsito.
                             </p>
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
-                    <div class="faq-item bg-brand-card rounded-2xl border border-brand-border overflow-hidden transition duration-300">
-                        <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg hover:text-brand-gold transition">
+                    <div class="faq-item bg-brand-card rounded-xl border border-brand-border overflow-hidden transition duration-300">
+                        <button class="faq-button w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-brand-gold transition">
                             <span>Vocês atendem de madrugada e em feriados?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                            <i class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-300"></i>
                         </button>
-                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                            <p class="text-zinc-400 text-sm sm:text-base pb-5 leading-relaxed">
-                                Sim! Nosso plantão é 100% ininterrupto, funcionando 24 horas por dia, 7 dias por semana, inclusive aos sábados, domingos e feriados.
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5">
+                            <p class="text-zinc-400 text-xs sm:text-sm pb-4 leading-relaxed">
+                                Sim! Nosso atendimento funciona 24 horas por dia, 7 dias por semana, inclusive aos sábados, domingos e feriados.
                             </p>
                         </div>
                     </div>
 
                     <!-- FAQ 3 -->
-                    <div class="faq-item bg-brand-card rounded-2xl border border-brand-border overflow-hidden transition duration-300">
-                        <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg hover:text-brand-gold transition">
+                    <div class="faq-item bg-brand-card rounded-xl border border-brand-border overflow-hidden transition duration-300">
+                        <button class="faq-button w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-brand-gold transition">
                             <span>A abertura danifica minha porta ou a lataria do carro?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                            <i class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-300"></i>
                         </button>
-                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                            <p class="text-zinc-400 text-sm sm:text-base pb-5 leading-relaxed">
-                                Não. Utilizamos técnicas profissionais de gazua, cunhas infláveis e decodificadores específicos que abrem fechaduras e veículos de forma limpa, preservando a integridade da sua porta e miolo.
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5">
+                            <p class="text-zinc-400 text-xs sm:text-sm pb-4 leading-relaxed">
+                                Não. Utilizamos técnicas e ferramentas profissionais específicas que abrem fechaduras e veículos preservando a integridade da sua porta e miolo.
                             </p>
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
-                    <div class="faq-item bg-brand-card rounded-2xl border border-brand-border overflow-hidden transition duration-300">
-                        <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg hover:text-brand-gold transition">
+                    <div class="faq-item bg-brand-card rounded-xl border border-brand-border overflow-hidden transition duration-300">
+                        <button class="faq-button w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-brand-gold transition">
                             <span>Quais são as formas de pagamento aceitas?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                            <i class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-300"></i>
                         </button>
-                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                            <p class="text-zinc-400 text-sm sm:text-base pb-5 leading-relaxed">
-                                Aceitamos Pix, cartões de crédito e débito (com máquina levada até você pelo técnico) e dinheiro em espécie. O valor é combinado previamente com total transparência.
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5">
+                            <p class="text-zinc-400 text-xs sm:text-sm pb-4 leading-relaxed">
+                                Aceitamos Pix, cartões de crédito e débito e dinheiro. O valor é combinado previamente com total transparência.
                             </p>
                         </div>
                     </div>
 
                     <!-- FAQ 5 -->
-                    <div class="faq-item bg-brand-card rounded-2xl border border-brand-border overflow-hidden transition duration-300">
-                        <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg hover:text-brand-gold transition">
-                            <span>Vocês fazem chave codificada no local onde o carro está parado?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
+                    <div class="faq-item bg-brand-card rounded-xl border border-brand-border overflow-hidden transition duration-300">
+                        <button class="faq-button w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base hover:text-brand-gold transition">
+                            <span>Vocês fazem chave codificada no local?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-300"></i>
                         </button>
-                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
-                            <p class="text-zinc-400 text-sm sm:text-base pb-5 leading-relaxed">
-                                Sim! Nossas viaturas são equipadas com máquinas de corte e aparelhos de programação de chip OBD, permitindo confeccionar e habilitar a chave do seu carro diretamente no local.
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5">
+                            <p class="text-zinc-400 text-xs sm:text-sm pb-4 leading-relaxed">
+                                Sim! Possuímos equipamentos para confeccionar e programar a chave do seu carro diretamente no local.
                             </p>
                         </div>
                     </div>
@@ -939,47 +856,48 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 9: CTA FINAL DE ALTA CONVERSÃO (Rodapé - WhatsApp) -->
-        <section class="py-20 bg-gradient-to-b from-brand-dark to-brand-black relative overflow-hidden border-t border-brand-border">
+        <!-- SEÇÃO 9: CTA FINAL — CTA 3 DO SITE -->
+        <section class="py-16 sm:py-20 bg-gradient-to-b from-brand-dark to-brand-black relative overflow-hidden border-t border-brand-border">
             <div class="absolute inset-0 bg-hero-glow pointer-events-none"></div>
             
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-on-scroll">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-card border border-brand-gold/40 text-brand-gold text-xs sm:text-sm font-bold mb-6">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-on-scroll">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/40 text-brand-gold text-xs font-bold mb-5">
                     <i class="fa-solid fa-shield-check"></i>
                     Atendimento Imediato & Seguro
                 </div>
 
-                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-6">
-                    📞 Ligue agora pelo WhatsApp e tenha um <br>
+                <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-4">
+                    📞 Ligue agora pelo WhatsApp e tenha um <br class="hidden sm:inline">
                     <span class="text-gold-gradient">chaveiro 24 horas em minutos!</span>
                 </h2>
 
-                <p class="text-zinc-300 text-base sm:text-lg max-w-2xl mx-auto mb-10">
-                    Clique no botão abaixo para iniciar o atendimento no WhatsApp e receber um chaveiro rapidamente onde você estiver.
+                <p class="text-zinc-300 text-xs sm:text-sm max-w-xl mx-auto mb-8">
+                    Clique no botão abaixo para iniciar o atendimento no WhatsApp e receber suporte imediato.
                 </p>
 
+                <!-- CTA 3: Final da Página -->
                 <div class="flex justify-center items-center">
-                    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%2024%20horas%20em%20minutos" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer flex items-center justify-center gap-3 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-lg sm:text-xl px-10 py-5 rounded-2xl shadow-2xl shadow-amber-500/30 transition duration-300 hover:scale-105 w-full sm:w-auto" data-conversion="whatsapp-footer-main-cta">
-                        <i class="fa-brands fa-whatsapp text-3xl"></i>
-                        <span>Chamar no WhatsApp: (21) 97041-6642</span>
+                    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%2024%20horas%20em%20minutos" target="_blank" rel="noopener" class="cta-whatsapp btn-shimmer inline-flex items-center justify-center gap-2.5 bg-gold-gradient hover:bg-gold-gradient-hover text-black font-extrabold text-sm sm:text-base px-8 py-4 rounded-xl shadow-xl shadow-amber-500/25 transition duration-300 hover:scale-105 w-full sm:w-auto" data-conversion="whatsapp-footer-cta">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Chame Chaveiro</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER / RODAPÉ -->
-    <footer id="contato" class="bg-brand-black border-t border-brand-border/80 pt-16 pb-12 text-zinc-400 text-sm">
+    <!-- FOOTER / RODAPÉ — CTA 4 (Link Direto de Contato) -->
+    <footer id="contato" class="bg-brand-black border-t border-brand-border/80 pt-12 pb-10 text-zinc-400 text-xs sm:text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-zinc-800">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-zinc-800">
                 
                 <!-- Coluna 1: Sobre & Logo -->
                 <div class="flex flex-col items-start">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="images/BR Chaveiro 24 horas logo favicon 250x250.webp" alt="BR Chaveiro 24 Horas" class="h-10 w-10 rounded-lg object-contain border border-brand-gold/30">
-                        <span class="font-heading font-bold text-lg text-white">BR <span class="text-brand-gold">CHAVEIRO 24H</span></span>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <img src="images/BR Chaveiro 24 horas logo favicon 250x250.webp" alt="BR Chaveiro 24 Horas" class="h-9 w-9 rounded-lg object-contain border border-brand-gold/30">
+                        <span class="font-heading font-bold text-base text-white">BR <span class="text-brand-gold">CHAVEIRO 24H</span></span>
                     </div>
-                    <p class="text-zinc-400 text-xs leading-relaxed mb-4">
+                    <p class="text-zinc-400 text-xs leading-relaxed mb-3">
                         Atendimento de chaveiro 24 horas para residências, automóveis e empresas em Belford Roxo, Duque de Caxias, São João de Meriti e Nova Iguaçu.
                     </p>
                     <div class="flex items-center gap-2 text-emerald-400 text-xs font-semibold">
@@ -990,8 +908,8 @@
 
                 <!-- Coluna 2: Links Rápidos com Âncoras -->
                 <div>
-                    <p class="font-heading font-bold text-white text-base mb-4">Navegação Rápida</p>
-                    <ul class="space-y-2 text-xs">
+                    <p class="font-heading font-bold text-white text-sm mb-3">Navegação Rápida</p>
+                    <ul class="space-y-1.5 text-xs">
                         <li><a href="#home" class="hover:text-brand-gold transition">Home</a></li>
                         <li><a href="#servicos" class="hover:text-brand-gold transition">Nossos Serviços</a></li>
                         <li><a href="#diferenciais" class="hover:text-brand-gold transition">Nosso Diferencial</a></li>
@@ -1004,26 +922,26 @@
 
                 <!-- Coluna 3: Regiões -->
                 <div>
-                    <p class="font-heading font-bold text-white text-base mb-4">Bairros e Cidades</p>
-                    <ul class="space-y-2 text-xs text-zinc-400">
-                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1.5"></i> Belford Roxo - RJ</li>
-                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1.5"></i> Duque de Caxias - RJ</li>
-                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1.5"></i> São João de Meriti - RJ</li>
-                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1.5"></i> Nova Iguaçu - RJ</li>
+                    <p class="font-heading font-bold text-white text-sm mb-3">Bairros e Cidades</p>
+                    <ul class="space-y-1.5 text-xs text-zinc-400">
+                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1"></i> Belford Roxo - RJ</li>
+                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1"></i> Duque de Caxias - RJ</li>
+                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1"></i> São João de Meriti - RJ</li>
+                        <li><i class="fa-solid fa-location-dot text-brand-gold mr-1"></i> Nova Iguaçu - RJ</li>
                     </ul>
                 </div>
 
-                <!-- Coluna 4: Contato & Plantão (100% WhatsApp) -->
+                <!-- Coluna 4: Contato & Plantão (CTA 4) -->
                 <div>
-                    <p class="font-heading font-bold text-white text-base mb-4">Atendimento Direto</p>
-                    <div class="space-y-3 text-xs">
+                    <p class="font-heading font-bold text-white text-sm mb-3">Atendimento Direto</p>
+                    <div class="space-y-2.5 text-xs">
                         <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20atendimento%20de%20chaveiro" target="_blank" rel="noopener" class="cta-whatsapp flex items-center gap-2.5 text-zinc-300 hover:text-emerald-400 transition" data-conversion="whatsapp-footer-contact">
-                            <div class="w-8 h-8 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-emerald-400 text-base">
+                            <div class="w-8 h-8 rounded-lg bg-brand-card border border-brand-gold/30 flex items-center justify-center text-emerald-400 text-sm">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </div>
                             <div>
-                                <p class="text-white font-bold">(21) 97041-6642</p>
-                                <p class="text-zinc-500 text-[11px]">Plantão WhatsApp 24 Horas</p>
+                                <p class="text-white font-bold text-xs">(21) 97041-6642</p>
+                                <p class="text-zinc-500 text-[10px]">Plantão WhatsApp 24 Horas</p>
                             </div>
                         </a>
                     </div>
@@ -1032,19 +950,19 @@
             </div>
 
             <!-- Copyright e Créditos -->
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-zinc-500">
                 <p>&copy; <span id="yearSpan"></span> BR Chaveiro 24 Horas. Todos os direitos reservados.</p>
                 <p>Desenvolvido com foco em alta conversão e SEO por Criar Impacto.</p>
             </div>
         </div>
     </footer>
 
-    <!-- BOTÃO FLUTUANTE DO WHATSAPP COM EFEITO PULSANTE (100% WhatsApp) -->
-    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%2024%20horas%20em%20minutos" target="_blank" rel="noopener" aria-label="Falar com o Chaveiro 24h no WhatsApp" class="cta-whatsapp fixed bottom-6 right-6 z-50 flex items-center gap-3 group" data-conversion="whatsapp-floating-button">
-        <span class="hidden md:inline-flex bg-brand-dark/95 text-white font-bold text-xs px-3.5 py-2 rounded-full border border-brand-gold/50 shadow-xl backdrop-blur-md transition duration-300 group-hover:border-emerald-400">
-            🚨 Plantão 24h Online
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP (Compacto para Mobile) -->
+    <a href="https://wa.me/5521970416642?text=Vi%20sua%20campanha%20e%20quero%20um%20chaveiro%2024%20horas" target="_blank" rel="noopener" aria-label="Falar com o Chaveiro 24h no WhatsApp" class="cta-whatsapp fixed bottom-5 right-5 z-50 flex items-center gap-2.5 group" data-conversion="whatsapp-floating">
+        <span class="hidden md:inline-flex bg-brand-dark/95 text-white font-bold text-[11px] px-3 py-1.5 rounded-full border border-brand-gold/50 shadow-lg backdrop-blur-md transition duration-300 group-hover:border-emerald-400">
+            🚨 Plantão 24h
         </span>
-        <div class="pulse-whatsapp w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 flex items-center justify-center text-white text-3xl sm:text-4xl shadow-2xl transition duration-300 transform group-hover:scale-110">
+        <div class="pulse-whatsapp w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white text-2xl shadow-xl transition duration-300 transform group-hover:scale-105">
             <i class="fa-brands fa-whatsapp"></i>
         </div>
     </a>
@@ -1113,8 +1031,8 @@
                     }
                 });
             }, {
-                threshold: 0.12,
-                rootMargin: '0px 0px -40px 0px'
+                threshold: 0.1,
+                rootMargin: '0px 0px -30px 0px'
             });
 
             revealElements.forEach(el => observer.observe(el));
