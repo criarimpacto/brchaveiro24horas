@@ -3,10 +3,10 @@
 ## 1. Dados da Empresa
 - **Nome da Marca**: BR Chaveiro 24 Horas
 - **Nicho**: Chaveiro Residencial, Comercial e Automotivo 24 Horas
-- **Contato Principal (CTR 100% WhatsApp)**: WhatsApp (21) 97041-6642
+- **Contato Principal (CTR 100% WhatsApp)**: WhatsApp (21) 97041-6642 (Mensagem: "Vi sua campanha e quero...")
 - **Região de Atuação**: Baixada Fluminense (Belford Roxo, Duque de Caxias, São João de Meriti e Nova Iguaçu - RJ)
-- **Horário de Atendimento**: 24 Horas por dia, 7 dias por semana (inclusive domingos e feriados)
-- **URL Canônica da Landing Page**: `https://www.brchaveiro24horas.com.br/chaveiro24horas/`
+- **Horário de Atendimento**: 24 Horas por dia, 7 dias por semana
+- **URL Canônica da Landing Page**: `https://chaveiro24h.brchaveiro24horas.com.br/`
 
 ## 2. Direção Estética & Identidade Visual
 - **Preset Estético**: *Midnight Luxe / Dark Gold*
@@ -19,16 +19,16 @@
   - Textos: Branco Puro (`#FFFFFF`) e Cinza Suave (`#A1A1AA`)
 
 ## 3. Arquitetura de Conversão (CRO) & Seções Âncoras
-1. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#home` — Hero com Badge 24h ativo, Headline de socorro e CTA principal no WhatsApp.
-2. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#emergencia` — Faixa de atendimento rápido e tempo médio de chegada.
-3. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#servicos` — Nossos Serviços (Abertura de portas, chaves codificadas, fechaduras eletrônicas, troca de segredo, abertura de cofres, telecomandos).
-4. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#diferenciais` — Nosso Diferencial (Atendimento imediato, confiança, transparência e tecnologia).
-5. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#publico` — Nosso Público (Residencial, Automotivo e Comercial).
-6. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#regioes` — Bairros que Atendemos (Belford Roxo, Caxias, Meriti, Nova Iguaçu).
-7. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#historia` — Nossa História (Tradição e segurança).
-8. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#faq` — Perguntas Frequentes.
-9. `https://www.brchaveiro24horas.com.br/chaveiro24horas/#contato` — Rodapé e contato WhatsApp.
+1. `https://chaveiro24h.brchaveiro24horas.com.br/#home` — Hero com Badge 24h ativo, Headline de urgência e CTA 1 ("Chame Chaveiro").
+2. `https://chaveiro24h.brchaveiro24horas.com.br/#emergencia` — Faixa de atendimento rápido e CTA 2 ("Fale Comigo").
+3. `https://chaveiro24h.brchaveiro24horas.com.br/#servicos` — Nossos Serviços (6 cards limpos com imagens locais da pasta `images/`).
+4. `https://chaveiro24h.brchaveiro24horas.com.br/#diferenciais` — Nosso Diferencial (Escopo realista, sem promessas infladas).
+5. `https://chaveiro24h.brchaveiro24horas.com.br/#publico` — Nosso Público (Residencial, Automotivo e Comercial).
+6. `https://chaveiro24h.brchaveiro24horas.com.br/#regioes` — Bairros que Atendemos (Belford Roxo, Caxias, Meriti, Nova Iguaçu).
+7. `https://chaveiro24h.brchaveiro24horas.com.br/#historia` — Nossa História (Tradição e segurança).
+8. `https://chaveiro24h.brchaveiro24horas.com.br/#faq` — Perguntas Frequentes.
+9. `https://chaveiro24h.brchaveiro24horas.com.br/#contato` — CTA 3 ("Chame Chaveiro") e CTA 4 no Rodapé (Link direto WhatsApp).
 
-## 4. Estratégia de Rastreio (Google Ads / Analytics)
-- **Funil Unificado**: 100% dos cliques de conversão são direcionados ao WhatsApp `(21) 97041-6642` com a mensagem pré-configurada `"Vi sua campanha e quero..."`.
-- **Atributos de Rastreio**: Todos os links de conversão contêm a classe `.cta-whatsapp` e o atributo `data-conversion` para facilitar a criação de acionadores de clique no Google Tag Manager / Google Ads.
+## 4. Repositório e Infraestrutura de Hospedagem
+- **Repositório GitHub**: `https://github.com/criarimpacto/brchaveiro24horas.git` (Branch `main`)
+- **Próximo Passo / Meta**: Conectar o repositório ao **Cloudflare Pages** para obter hospedagem global com CDN ultra-rápida, HTTPS instantâneo e repositório 100% privado gratuito no subdomínio `chaveiro24h.brchaveiro24horas.com.br`.
