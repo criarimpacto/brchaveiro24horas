@@ -32,7 +32,8 @@
 ## 4. Rastreamento e Conversões (GTM & Google Ads)
 - **Google Tag Manager**: `GTM-MC2DK6ZF` (instalado no head e body noscript)
 - **Google Ads Global Tag**: `AW-18472970998` (instalado no head)
-- **Acionador de Conversão**: Classe `.cta-whatsapp` e atributo `data-conversion` presentes em 100% dos botões de WhatsApp.
+- **Evento de Conversão Google Ads**: `AW-18472970998/Ey8NCK6n84odEPbVzOhE` (disparado automaticamente em 100% dos cliques em links e botões do WhatsApp)
+- **Identificadores**: Classe `.cta-whatsapp` e seletor `a[href*="wa.me"]`.
 
 ## 5. Repositório e Infraestrutura de Hospedagem
 - **Repositório GitHub**: `https://github.com/criarimpacto/brchaveiro24horas.git` (Branch `main`)

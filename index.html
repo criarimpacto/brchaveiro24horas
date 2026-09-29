@@ -17,6 +17,27 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-18472970998');
+
+      // Event snippet para conversão no Google Ads
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.open(url, '_blank');
+          }
+        };
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+              'send_to': 'AW-18472970998/Ey8NCK6n84odEPbVzOhE',
+              'value': 1.0,
+              'currency': 'BRL',
+              'transaction_id': '',
+              'event_callback': callback
+          });
+        } else if (typeof(url) != 'undefined') {
+          window.open(url, '_blank');
+        }
+        return false;
+      }
     </script>
 
     <meta charset="UTF-8">
@@ -1061,6 +1082,22 @@
         } else {
             revealElements.forEach(el => el.classList.add('is-visible'));
         }
+
+        // Rastreamento Automático de Conversões Google Ads em Todos os Cliques do WhatsApp
+        document.addEventListener('DOMContentLoaded', function() {
+            var whatsappElements = document.querySelectorAll('.cta-whatsapp, a[href*="wa.me"]');
+            whatsappElements.forEach(function(elem) {
+                elem.addEventListener('click', function() {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-18472970998/Ey8NCK6n84odEPbVzOhE',
+                            'value': 1.0,
+                            'currency': 'BRL'
+                        });
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
