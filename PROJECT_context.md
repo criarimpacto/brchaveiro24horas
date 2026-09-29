@@ -29,6 +29,11 @@
 8. `https://chaveiro24h.brchaveiro24horas.com.br/#faq` — Perguntas Frequentes.
 9. `https://chaveiro24h.brchaveiro24horas.com.br/#contato` — CTA 3 ("Chame Chaveiro") e CTA 4 no Rodapé (Link direto WhatsApp).
 
-## 4. Repositório e Infraestrutura de Hospedagem
+## 4. Rastreamento e Conversões (GTM & Google Ads)
+- **Google Tag Manager**: `GTM-MC2DK6ZF` (instalado no head e body noscript)
+- **Google Ads Global Tag**: `AW-18472970998` (instalado no head)
+- **Acionador de Conversão**: Classe `.cta-whatsapp` e atributo `data-conversion` presentes em 100% dos botões de WhatsApp.
+
+## 5. Repositório e Infraestrutura de Hospedagem
 - **Repositório GitHub**: `https://github.com/criarimpacto/brchaveiro24horas.git` (Branch `main`)
 - **Próximo Passo / Meta**: Conectar o repositório ao **Cloudflare Pages** para obter hospedagem global com CDN ultra-rápida, HTTPS instantâneo e repositório 100% privado gratuito no subdomínio `chaveiro24h.brchaveiro24horas.com.br`.
