@@ -210,13 +210,46 @@
         .reveal-on-scroll {
             opacity: 0;
             transform: translateY(24px);
-            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
 
-        .reveal-on-scroll.is-visible {
+        .reveal-slide-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-slide-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-zoom-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-on-scroll.is-visible,
+        .reveal-slide-left.is-visible,
+        .reveal-slide-right.is-visible,
+        .reveal-zoom-in.is-visible {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0) translateX(0) scale(1);
+        }
+
+        .floating-img {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+        }
+
+        .floating-img:hover {
+            transform: scale(1.03) translateY(-4px);
+            filter: drop-shadow(0 15px 30px rgba(212, 175, 55, 0.25));
         }
     </style>
 </head>
@@ -413,125 +446,238 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 3: NOSSOS SERVIÇOS (#servicos) — Cards Limpos Sem Excesso de Botões -->
-        <section id="servicos" class="py-16 md:py-24 bg-brand-black relative">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- SEÇÃO 3: NOSSOS SERVIÇOS (#servicos) — Layout Aberto em Zigue-Zague com Imagens Marcantes -->
+        <section id="servicos" class="py-20 md:py-32 bg-brand-black relative overflow-hidden">
+            <!-- Brilho de fundo decorativo -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-gold/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 reveal-on-scroll">
-                    <span class="text-brand-gold font-bold text-xs tracking-widest uppercase mb-1.5 inline-block">Nossas Especialidades</span>
-                    <h2 class="font-heading font-extrabold text-2.5xl sm:text-4xl text-white tracking-tight mb-3">
+                <!-- Cabeçalho da Seção -->
+                <div class="text-center max-w-3xl mx-auto mb-20 md:mb-28 reveal-on-scroll">
+                    <span class="text-brand-gold font-bold text-xs sm:text-sm tracking-widest uppercase mb-2 inline-block">Nossas Especialidades</span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight mb-4">
                         Nossos <span class="text-gold-gradient">Serviços</span>
                     </h2>
-                    <p class="text-zinc-400 text-sm sm:text-base">
-                        Soluções ágeis, seguras e com ferramentas modernas para não danificar suas portas, travas ou veículos.
+                    <p class="text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed">
+                        Atendimento ágil, seguro e com tecnologia de ponta para residências, veículos e empresas na Baixada Fluminense.
                     </p>
                 </div>
 
-                <!-- Grid de Serviços -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- LINHA 1: SERVIÇOS AUTOMOTIVOS & CHAVES CODIFICADAS (Imagem à Esquerda, Texto à Direita) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-24 md:mb-32">
                     
-                    <!-- Serviço 1: Abertura Residencial -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
-                        <div class="h-44 overflow-hidden relative">
-                            <img src="images/chave-comum-chaveiro residência.webp" alt="Abertura residencial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">24 Horas</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Abertura Residencial
-                            </h3>
-                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                                Abertura técnica de portas residenciais, portões, fechaduras tetra e trincos travados sem quebrar ou danificar a estrutura.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Serviço 2: Abertura Automotiva (Nacionais e Importados) -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
-                        <div class="h-44 overflow-hidden relative">
-                            <img src="images/chaveiro-chave codificada-abertura de veiculo.webp" alt="Abertura automotiva nacionais e importados" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Auto 24h</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Abertura Automotiva (Nacionais e Importados)
-                            </h3>
-                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                                Abertura emergencial de carros nacionais e importados sem arranhões, preservando a lataria, guarnições e o miolo da porta.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Serviço 3: Confecção de Chaves Residencial -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
-                        <div class="h-44 overflow-hidden relative">
-                            <img src="images/chave-comum-chaveiro 24h-chave.webp" alt="Confecção de chaves residencial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Residencial</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Confecção de Chaves Residencial
-                            </h3>
-                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                                Confecção e cópias de chaves comuns, tetra e multiponto direto pelo segredo da fechadura ou troca de cilindro.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Serviço 4: Confecção de Chaves Automotivas -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
-                        <div class="h-44 overflow-hidden relative">
-                            <img src="images/chave-de-carro-perdida-a chaveiro carro.webp" alt="Confecção de chaves automotivas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400" height="180">
-                            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Codificadas</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Confecção de Chaves Automotivas
-                            </h3>
-                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                                Confecção e cópias de chaves codificadas com chip transponder, telecomandos, chaves de presença e canivete no local.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Serviço 5: Instalação de Fechadura Eletrônica ou Digital -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
-                        <div class="h-44 overflow-hidden relative bg-zinc-900 flex items-center justify-center">
-                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl">
-                                <i class="fa-solid fa-fingerprint"></i>
+                    <!-- Imagem Marcante (Slide Esquerda / Zoom) -->
+                    <div class="lg:col-span-5 reveal-slide-left">
+                        <div class="relative group">
+                            <!-- Glow circular de destaque -->
+                            <div class="absolute -inset-2 bg-gradient-to-tr from-brand-gold/30 via-amber-500/20 to-transparent rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-700"></div>
+                            
+                            <div class="relative bg-gradient-to-b from-brand-card to-brand-dark p-3 sm:p-4 rounded-3xl border border-brand-gold/30 shadow-2xl overflow-hidden">
+                                <img src="images/chaveiro-chave codificada-abertura de veiculo.webp" alt="Abertura automotiva e chave codificada" class="floating-img w-full h-[280px] sm:h-[360px] object-cover rounded-2xl" loading="lazy" width="500" height="360">
+                                
+                                <div class="absolute bottom-6 left-6 bg-brand-black/85 backdrop-blur-md px-4 py-2 rounded-xl border border-brand-gold/40 text-xs font-bold text-brand-goldLight shadow-lg">
+                                    🚗 Auto 24 Horas
+                                </div>
                             </div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Digital</span>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Instalação de Fechadura Eletrônica ou Digital
-                            </h3>
-                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                                Instalação, configuração e manutenção de fechaduras digitais inteligentes por biometria, senha e cartão magnético para imóveis.
-                            </p>
                         </div>
                     </div>
 
-                    <!-- Serviço 6: Casamento de Módulo (Carros e Motos / Leilão) -->
-                    <div class="reveal-on-scroll bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/60 transition-all duration-300 group shadow-md">
-                        <div class="h-44 overflow-hidden relative bg-zinc-900 flex items-center justify-center">
-                            <div class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl">
-                                <i class="fa-solid fa-microchip"></i>
+                    <!-- Conteúdo com SEO (Slide Direita) -->
+                    <div class="lg:col-span-7 reveal-slide-right">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-goldLight text-xs font-bold uppercase tracking-wider mb-4">
+                            <i class="fa-solid fa-car-side"></i>
+                            Linha Automotiva
+                        </div>
+
+                        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight mb-4">
+                            Abertura de Veículos e <span class="text-gold-gradient">Chaves Codificadas</span>
+                        </h3>
+
+                        <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Socorro automotivo especializado para carros e motos nacionais e importados. Atendimento emergencial no local onde o seu veículo estiver parado:
+                        </p>
+
+                        <ul class="space-y-4 text-zinc-300 text-sm sm:text-base">
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Abertura Automotiva (Nacionais e Importados):</strong>
+                                    <span class="text-zinc-400"> Abertura técnica e limpa, sem arranhões na lataria, danos às vedações ou vidros.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Confecção de Chaves Automotivas:</strong>
+                                    <span class="text-zinc-400"> Cópias e confecção de chaves codificadas com chip transponder e presença, mesmo se você perdeu todas as chaves.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Telecomandos e Chaves Canivete:</strong>
+                                    <span class="text-zinc-400"> Troca de carcaças desgastadas, conserto de botões quebrados e sincronização de controles de alarme.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- LINHA 2: SERVIÇOS RESIDENCIAIS & FECHADURAS DIGITAIS (Inversão: Texto à Esquerda, Imagem à Direita) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-24 md:mb-32">
+                    
+                    <!-- Conteúdo com SEO (Slide Esquerda) -->
+                    <div class="lg:col-span-7 order-2 lg:order-1 reveal-slide-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-goldLight text-xs font-bold uppercase tracking-wider mb-4">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            Linha Residencial & Comercial
+                        </div>
+
+                        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight mb-4">
+                            Abertura Residencial e <span class="text-gold-gradient">Fechaduras Digitais</span>
+                        </h3>
+
+                        <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Ficou trancado do lado de fora ou precisa reforçar a segurança do seu imóvel? Atendimento cuidadoso para casas, apartamentos, condomínios e comércios:
+                        </p>
+
+                        <ul class="space-y-4 text-zinc-300 text-sm sm:text-base">
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Abertura Residencial Técnica:</strong>
+                                    <span class="text-zinc-400"> Destravamento de portas comuns, tetra, portões e portas blindadas sem quebrar a fechadura.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Confecção de Chaves Residencial:</strong>
+                                    <span class="text-zinc-400"> Confecção e cópias de chaves comuns, tetra e multiponto direto pelo segredo da fechadura.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Troca e Instalação de Fechaduras:</strong>
+                                    <span class="text-zinc-400"> Troca de segredo após mudanças ou perdas, substituição de cilindros e travas de segurança.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Instalação de Fechadura Eletrônica ou Digital:</strong>
+                                    <span class="text-zinc-400"> Configuração e instalação de fechaduras digitais inteligentes por biometria, senha e tag magnética.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Imagem Marcante (Slide Direita / Zoom) -->
+                    <div class="lg:col-span-5 order-1 lg:order-2 reveal-slide-right">
+                        <div class="relative group">
+                            <!-- Glow circular de destaque -->
+                            <div class="absolute -inset-2 bg-gradient-to-tl from-brand-gold/30 via-amber-500/20 to-transparent rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-700"></div>
+                            
+                            <div class="relative bg-gradient-to-b from-brand-card to-brand-dark p-3 sm:p-4 rounded-3xl border border-brand-gold/30 shadow-2xl overflow-hidden">
+                                <img src="images/chave-comum-chaveiro residência.webp" alt="Chaveiro residencial e abertura de portas" class="floating-img w-full h-[280px] sm:h-[360px] object-cover rounded-2xl" loading="lazy" width="500" height="360">
+                                
+                                <div class="absolute bottom-6 left-6 bg-brand-black/85 backdrop-blur-md px-4 py-2 rounded-xl border border-brand-gold/40 text-xs font-bold text-brand-goldLight shadow-lg">
+                                    🔑 Residencial 24 Horas
+                                </div>
                             </div>
-                            <span class="absolute top-3 right-3 bg-brand-dark/90 text-brand-gold text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-brand-gold/30">Especializado</span>
                         </div>
-                        <div class="p-5">
-                            <h3 class="font-heading font-bold text-lg text-white mb-2 group-hover:text-brand-goldLight transition">
-                                Casamento de Módulo (Carros, Motos e Leilão)
-                            </h3>
-                            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                                Sincronização e reset eletrônico de módulo de injeção (ECU), painel de instrumentos e imobilizador — ideal para veículos de leilão ou trocas de módulo.
-                            </p>
+                    </div>
+
+                </div>
+
+                <!-- LINHA 3: CASAMENTO DE MÓDULO & VEÍCULOS DE LEILÃO (Imagem à Esquerda, Texto à Direita) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+                    
+                    <!-- Imagem Marcante (Zoom / Slide Esquerda) -->
+                    <div class="lg:col-span-5 reveal-zoom-in">
+                        <div class="relative group">
+                            <!-- Glow circular de destaque -->
+                            <div class="absolute -inset-2 bg-gradient-to-tr from-brand-gold/35 via-amber-600/25 to-transparent rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-700"></div>
+                            
+                            <div class="relative bg-gradient-to-b from-brand-card to-brand-dark p-3 sm:p-4 rounded-3xl border border-brand-gold/40 shadow-2xl overflow-hidden">
+                                <img src="images/chave-de-carro-perdida-a chaveiro carro.webp" alt="Casamento de modulo e chave de carro" class="floating-img w-full h-[280px] sm:h-[360px] object-cover rounded-2xl" loading="lazy" width="500" height="360">
+                                
+                                <div class="absolute bottom-6 left-6 bg-brand-black/85 backdrop-blur-md px-4 py-2 rounded-xl border border-brand-gold/40 text-xs font-bold text-brand-goldLight shadow-lg flex items-center gap-1.5">
+                                    <i class="fa-solid fa-microchip text-brand-gold"></i>
+                                    Especialista em Leilão
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Conteúdo com SEO (Slide Direita) -->
+                    <div class="lg:col-span-7 reveal-slide-right">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-goldLight text-xs font-bold uppercase tracking-wider mb-4">
+                            <i class="fa-solid fa-microchip"></i>
+                            Eletrônica Automotiva Especializada
+                        </div>
+
+                        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight mb-4">
+                            Casamento de Módulo <span class="text-gold-gradient">(Carros, Motos e Leilão)</span>
+                        </h3>
+
+                        <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
+                            O <strong>casamento ou reset de módulo</strong> é fundamental na compra de carros ou motos de leilão. É o processo eletrônico que sincroniza o módulo de injeção (ECU), o painel de instrumentos e o sistema imobilizador do veículo para que eles se reconheçam e liberem o funcionamento do motor.
+                        </p>
+
+                        <ul class="space-y-4 text-zinc-300 text-sm sm:text-base">
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Sincronização ECU + Painel + Imobilizador:</strong>
+                                    <span class="text-zinc-400"> Casamento eletrônico completo entre todos os módulos para liberar a partida do veículo com segurança.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Carros e Motos Arrematados em Leilão:</strong>
+                                    <span class="text-zinc-400"> Solução completa para veículos sem chave ou com módulos trocados e bloqueados.</span>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center text-brand-gold text-xs flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Equipamentos de Diagnóstico Avançados:</strong>
+                                    <span class="text-zinc-400"> Programadores e scanners OBD modernos para programação rápida e precisa no local.</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -1063,8 +1209,8 @@
             });
         });
 
-        // Intersection Observer para animações suaves no scroll (reveal)
-        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        // Intersection Observer para animações suaves no scroll (reveal, slide e zoom)
+        const revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-slide-left, .reveal-slide-right, .reveal-zoom-in');
         if ('IntersectionObserver' in window) {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
